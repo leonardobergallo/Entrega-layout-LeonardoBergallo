@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background-color: #12bcf0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+.navbar .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2 / 3;
+}
+
+.navbar .menu {
+  grid-column: 4 / 7;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar .menu li {
+  list-style: none;
+}
+.navbar .menu a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar .menu a:hover {
+  color: #edcb54;
+}
+
+.navbar .menu-bar {
+  display: none;
+}
+
+.navbar .shoping {
+  grid-column: 8 / 9;
+}
+
+/* SECTION MAIN */
+
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.8),
+      rgba(16, 16, 16, 0.9)
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content {
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+  align-items: row;
+}
+
+.hero h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.hero h1 {
+  font-size: 5em;
+  color: #edcb54;
+}
+
+.hero p {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero .btn {
+  font-size: 1em;
+  background: none;
+  color: #edcb54;
+  padding: 10px 20px;
+  border: 1px solid #edcb54;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.hero .btn:hover {
+  background: #edcb54;
+  color: #fff;
+}
+
+/* SECTION FOOTER */
+.footer {
+  display: grid;
+  height: 80 px;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  grid-template-areas: "lister-online follow-me social-network";
+}
+
+.footer .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background-color: #edcb54;
+  padding: 26px;
+  color: black;
+}
+
+.footer .listen-online .fas {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.footer .follow-me {
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+
+.footer .social-network {
+  grid-template-areas: social-network;
+  font-size: 1.3em;
+  margin-right: 20px;
+}
+
+.footer .social-network .fab:hover {
+  margin-right: 15px;
+  color: #fff;
+}
+
+.footer .social-network .fab {
+  margin-right: 15px;
+  color: #fff;
+}
